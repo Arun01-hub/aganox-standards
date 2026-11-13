@@ -1,0 +1,29 @@
+name: Bug report
+description: Report incorrect behavior in an Aganox app
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for filing a bug. Do not paste secrets or production data.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Steps to reproduce
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      placeholder: v1.2.3 or git sha
