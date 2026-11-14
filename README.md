@@ -7,6 +7,7 @@ Central standards for all **Aganox** application repositories. Use this repo as 
 | Document | Purpose |
 |----------|---------|
 | [docs/REPOSITORY_STANDARDS.md](docs/REPOSITORY_STANDARDS.md) | Required files, branching, releases, security |
+| [docs/AI_DRIVEN_DEVELOPMENT.md](docs/AI_DRIVEN_DEVELOPMENT.md) | Cursor rules, `AGENTS.md`, gitignored templates |
 | [docs/APP_CATALOG.md](docs/APP_CATALOG.md) | Active apps, target names, owners |
 | [docs/ORG_MIGRATION.md](docs/ORG_MIGRATION.md) | GitHub org: create org, transfer repos |
 | [docs/AZURE_DEVOPS_MIGRATION.md](docs/AZURE_DEVOPS_MIGRATION.md) | **GitHub → Azure DevOps** import and cutover |

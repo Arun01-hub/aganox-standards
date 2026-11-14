@@ -1,0 +1,11 @@
+---
+description: Governance repo editing rules
+globs: **/*.{md,yml,ps1}
+alwaysApply: false
+---
+
+# Aganox Standards repo
+
+- Docs are the source of truth; update `APP_CATALOG.md` when repos are added, archived, or renamed.
+- Templates under `templates/` must stay generic; no app-specific secrets.
+- Keep `.mdc` rules short; prefer linking to `docs/AI_DRIVEN_DEVELOPMENT.md`.

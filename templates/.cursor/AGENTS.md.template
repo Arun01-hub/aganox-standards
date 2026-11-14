@@ -1,0 +1,44 @@
+# <Product name> — agent guide
+
+**Catalog**: [APP_CATALOG](https://github.com/Arun01-hub/aganox-standards/blob/main/docs/APP_CATALOG.md) · **AI standards**: [AI_DRIVEN_DEVELOPMENT](https://github.com/Arun01-hub/aganox-standards/blob/main/docs/AI_DRIVEN_DEVELOPMENT.md)
+
+## Purpose
+
+One paragraph: what this deployable app does in the Aganox platform.
+
+## Stack
+
+- List languages, frameworks, primary entry projects.
+
+## Repository layout
+
+```
+# Key folders only
+```
+
+## Commands
+
+| Task | Command |
+|------|---------|
+| Build | |
+| Run | |
+| Test | |
+
+## Configuration (no secrets in git)
+
+| File | Notes |
+|------|-------|
+| `appsettings.Development.local.json` | Copy from `*.example` |
+| `.env` / `.env.local` | Copy from `*.example` |
+
+## Dependencies on other Aganox repos
+
+| Repo | When required |
+|------|----------------|
+| Aganox-Identity | |
+
+## Agent constraints
+
+- Follow `.cursor/rules/` in this repo.
+- Minimal scope; match existing patterns.
+- Run tests before completing backend/frontend changes.

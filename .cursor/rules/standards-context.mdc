@@ -1,0 +1,10 @@
+---
+description: Aganox Standards repository context
+alwaysApply: true
+---
+
+# This repo (standards)
+
+- Markdown and templates only; no runtime application code.
+- `templates/` is copied into app repos; keep paths stable.
+- Archived monorepo: `Arun01-hub/aganox` — do not revive without catalog update.

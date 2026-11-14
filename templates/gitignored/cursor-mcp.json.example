@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "example-readonly": {
+      "comment": "Copy to .cursor/mcp.json (gitignored). No secrets in committed config."
+    }
+  }
+}

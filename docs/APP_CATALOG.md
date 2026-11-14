@@ -1,12 +1,11 @@
 # Aganox application catalog
 
-**Active** application repositories (excludes archived `lms-pay`). Target home: GitHub org **`aganox`**.
+**Active** application repositories (excludes archived `lms-pay` and legacy `aganox`). Target home: GitHub org **`aganox`**.
 
 ## Catalog
 
 | App | Current repo | Target org repo | Stack | Visibility | Status |
 |-----|--------------|-----------------|-------|------------|--------|
-| Platform core | [Arun01-hub/aganox](https://github.com/Arun01-hub/aganox) | `aganox/platform` | C# | Private | Pending transfer |
 | Leave management (LMS) | [Arun01-hub/aganox-lms](https://github.com/Arun01-hub/aganox-lms) | `aganox/lms` | C# | Public | Pending transfer |
 | Identity / auth | [Arun01-hub/aganox-identity](https://github.com/Arun01-hub/aganox-identity) | `aganox/identity` | C# | Public | Pending transfer |
 | Property rental | [Arun01-hub/aganox-rental](https://github.com/Arun01-hub/aganox-rental) | `aganox/rental` | — | Public | Pending transfer |
@@ -18,13 +17,13 @@
 
 | Repo | Notes |
 |------|--------|
+| [Arun01-hub/aganox](https://github.com/Arun01-hub/aganox) | Archived **2026-11-14** — legacy monorepo (LMS + embedded auth/rental); superseded by split app repos; do not migrate |
 | [Arun01-hub/lms-pay](https://github.com/Arun01-hub/lms-pay) | Archived — do not migrate |
 
 ## Suggested GitHub topics (by repo)
 
 | Target repo | Topics |
 |-------------|--------|
-| `platform` | `aganox`, `dotnet`, `enterprise` |
 | `lms` | `aganox`, `dotnet`, `hr`, `leave-management` |
 | `identity` | `aganox`, `dotnet`, `openid`, `authentication` |
 | `rental` | `aganox`, `api`, `property` |

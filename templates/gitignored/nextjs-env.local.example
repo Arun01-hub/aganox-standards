@@ -1,0 +1,2 @@
+# Copy to .env.local (gitignored). Optional for local-only overrides.
+NEXT_PUBLIC_SITE_URL=http://localhost:3000

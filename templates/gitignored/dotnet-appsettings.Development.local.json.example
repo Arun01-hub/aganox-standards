@@ -1,0 +1,10 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=MyApp_Dev;Trusted_Connection=True;TrustServerCertificate=True"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Debug"
+    }
+  }
+}

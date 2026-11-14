@@ -20,6 +20,9 @@ Prefer short names under the org (`lms`, `identity`, `rental`, `keyvault`, `pay-
 | `LICENSE` | Yes | MIT default |
 | `.gitignore` | Yes | Stack-appropriate |
 | `.github/pull_request_template.md` | Yes | From templates |
+| `AGENTS.md` | Yes | From [templates/.cursor/AGENTS.md.template](../templates/.cursor/AGENTS.md.template) |
+| `.cursor/rules/*.mdc` | Yes | See [AI_DRIVEN_DEVELOPMENT.md](AI_DRIVEN_DEVELOPMENT.md) |
+| `*.example` secret templates | Yes | One per gitignored secret path |
 | `.github/dependabot.yml` | Yes | npm / nuget / cargo as applicable |
 | `CODEOWNERS` | Recommended | `.github/CODEOWNERS` |
 | Issue templates | Recommended | Bug + feature |
@@ -63,13 +66,19 @@ Workflows live in `.github/workflows/`. Use org secrets, not repo plaintext secr
 
 ```
 README.md           # Overview, run locally, deploy
+AGENTS.md           # AI agent entry point (required)
 /docs              # Optional ADRs, architecture
+/.cursor/rules     # Cursor agent rules (.mdc)
 /.github           # Templates, workflows, CODEOWNERS
 ```
+
+See [AI_DRIVEN_DEVELOPMENT.md](AI_DRIVEN_DEVELOPMENT.md) for rule files, `AGENTS.md` sections, and committed `*.example` templates for gitignored secrets.
 
 ## Compliance checklist (per repo)
 
 - [ ] README matches template sections
+- [ ] `AGENTS.md` and `.cursor/rules/` (see AI-driven development doc)
+- [ ] Committed `*.example` for each gitignored secret path
 - [ ] LICENSE present
 - [ ] `.github` templates copied
 - [ ] Topics include `aganox`

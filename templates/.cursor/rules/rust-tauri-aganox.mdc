@@ -1,0 +1,12 @@
+---
+description: Rust, Tauri, and vault security conventions
+globs: **/*.{rs,toml}
+alwaysApply: false
+---
+
+# Rust / KeyVault
+
+- Crypto changes only in `crates/vault-core`; never log secrets or master passwords.
+- Zero-knowledge: server stores ciphertext blobs only.
+- Run `cargo fmt`, `cargo clippy`, `cargo test` for Rust changes.
+- Extension/desktop sync: preserve existing native messaging contract.
