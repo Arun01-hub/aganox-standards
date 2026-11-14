@@ -1,0 +1,30 @@
+# Example CI for Rust / Cargo workspace repos — copy to .github/workflows/ci.yml
+# Tauri crates need a Windows (or desktop-library) runner and a built frontend;
+# see aganox-keyvault's ci.yml for a split core/desktop example.
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Test
+        run: cargo test --workspace --locked

@@ -1,0 +1,36 @@
+# Example CI for .NET repos — copy to .github/workflows/ci.yml
+# Replace Aganox.<Service>.sln with the repo's solution file.
+# Drop the Test step if the solution has no test projects.
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Restore
+        run: dotnet restore Aganox.<Service>.sln
+
+      - name: Build
+        run: dotnet build Aganox.<Service>.sln -c Release --no-restore
+
+      - name: Test
+        run: dotnet test Aganox.<Service>.sln -c Release --no-build
